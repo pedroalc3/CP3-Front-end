@@ -1,0 +1,120 @@
+/* estilo geral da página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5efe6;
+  color: #333;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* cabeçalho: usei flex pra deixar o nome de um lado e o menu do outro */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #5a1a28;
+  color: white;
+}
+
+/* menu também em flex, um do lado do outro */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* pseudo-classe :hover - muda a cor do link quando passa o mouse */
+nav a:hover {
+  color: #d4a84b;
+}
+
+/* destaque: flex em coluna pra centralizar tudo */
+.destaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7a2a3a;
+  color: white;
+  padding: 60px 20px;
+}
+
+.botao {
+  background-color: #d4a84b;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* transformação 1: o botão aumenta um pouco no hover */
+.botao:hover {
+  transform: scale(1.1);
+}
+
+/* cards: flex pra ficarem lado a lado e quebrarem linha no celular */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  width: 220px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+/* transformação 2: o card gira um pouquinho e ganha sombra */
+.card:hover {
+  transform: rotate(-2deg) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card span {
+  font-weight: bold;
+  color: #5a1a28;
+}
+
+/* formulário em flex, um embaixo do outro */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  width: 250px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* pseudo-classe :focus - borda muda de cor quando clica no campo */
+input:focus {
+  outline: none;
+  border-color: #5a1a28;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #5a1a28;
+  color: white;
+}
