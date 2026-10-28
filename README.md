@@ -21,5 +21,5 @@ Página feita para o Check-Point 03, usando o tema da Vinheria Agnello. A ideia 
 Nome: Pedro Frazão Alcantara
 
 ## Links
-- Repositório: 
-- GitHub Pages:
+- Repositório: https://github.com/pedroalc3/CP3-Front-end
+- GitHub Pages: https://pedroalc3.github.io/CP3-Front-end/
